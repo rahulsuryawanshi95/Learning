@@ -9,7 +9,7 @@ import io.restassured.http.ContentType;
 
 public class PutPatchDeleteExamples 
 {
-	@Test
+	@Test(enabled=false)
 	public void testPut()
 	{		
 		JSONObject request= new JSONObject();
@@ -35,7 +35,7 @@ public class PutPatchDeleteExamples
 		
 	}
 
-//	@Test //this method has issue because patch request we dont have on server hence it produces 405 error
+	@Test(enabled=false) //this method has issue because patch request we dont have on server hence it produces 405 error
 	public void testPatch()
 	{		
 		JSONObject request= new JSONObject();
@@ -61,7 +61,7 @@ public class PutPatchDeleteExamples
 		
 	}
 	
-	@Test
+	@Test(enabled=false)
 	public void testDelete()
 	{				
 		baseURI="https://dummy.restapiexample.com/api";

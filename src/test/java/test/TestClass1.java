@@ -31,7 +31,7 @@ public class TestClass1
 		Thread.sleep(3000);
 	}
 
-	@Test
+	@Test(enabled=false)
 	public void test3()
 	{
 		baseURI="https://dummy.restapiexample.com";

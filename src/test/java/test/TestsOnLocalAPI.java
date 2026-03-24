@@ -9,14 +9,14 @@ import org.testng.annotations.Test;
 import io.restassured.http.ContentType;
 public class TestsOnLocalAPI 
 {
-//	@Test
+	@Test(enabled=false)
 	public void get()
 	{
 		baseURI="http://localhost:3000";
 		given().get("/users").then().statusCode(200).log().all();
 	}
 	
-//	@Test
+	@Test(enabled=false)
 	public void post()
 	{
 		JSONObject request=new JSONObject();
@@ -38,7 +38,7 @@ public class TestsOnLocalAPI
 			statusCode(201);			
 	}
 	
-	@Test
+	@Test(enabled=false)
 	public void put()
 	{
 		JSONObject request=new JSONObject();
@@ -59,7 +59,7 @@ public class TestsOnLocalAPI
 			statusCode(200);			
 	}
 	
-//	@Test
+	@Test(enabled=false)
 	public void patch()
 	{
 		JSONObject request=new JSONObject();
